@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+        background-color: bisque;
+    }
+    h3{
+        font-size: 50px;
+        text-align: center;
+    }
+    div{
+        font-size: 30px;
+    }
+
+input[type=text], select {
+  width: 100%;
+  padding: 20px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 10px;
+  background-color:chocolate;
+  padding: 30px;
+}
+</style>
+<body>
+
+<h3>Feedback</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input style="font-size: 20px;" type="text" id="name" name="name" placeholder="Your name..">
+    
+    <label for="Rating">Rating</label>
+    <select id="Rating" name="Rating">
+      <option value="very good">very good</option>
+      <option value="Awesome">Awesome</option>
+      <option value="Average">Average</option>
+      <option value="poor">poor</option>
+    </select>
+  
+
+    
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="india">INDIA</option>
+    </select>
+  
+    <input style="font-size: 20px;" type="submit" value="Submit" width="10">
+  </form>
+</div>
+
+</body>
+</html>
